@@ -15,14 +15,25 @@
   align-items: center;
 }
 
-.container label {
-  margin: 5px auto;
+.content {
+  display: flex;
+  flex-direction: column;
 }
 
-.container button {
-  margin-top: 10px;
+.content label {
+  margin-bottom: 5px;
+  color: grey;
 }
 
-.container span {
+.content input {
+  margin-bottom: 10px;
+}
+
+.content button {
+  /* margin: 0 auto; */
+  width: 100px;
+}
+
+.content span {
   margin-top: 10px;
 }
