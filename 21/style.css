@@ -1,0 +1,51 @@
+.container {
+  flex-direction: row;
+}
+
+.content {
+  min-height: 280px;
+}
+
+.container .content:first-child {
+  margin-right: 10px;
+}
+
+.container .content {
+  justify-content: space-around;
+}
+
+.container .content:first-child h2 {
+  margin-bottom: 0;
+}
+
+.container .content button {
+  margin-top: 20px;
+}
+
+
+.content .wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group label {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group .input {
+  width: 100%;
+}
+
+.input-group input {
+  width: 100%;
+}
+
