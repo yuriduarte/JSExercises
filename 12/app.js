@@ -8,7 +8,6 @@ btn.addEventListener('click', function() {
   const result = sum(input1, input2);
   show(result);
 
-  // Comentário de uma linha
   function sum(n1, n2) {
     return n1 + n2;
   }
