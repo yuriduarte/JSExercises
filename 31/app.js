@@ -3,13 +3,11 @@ function start() {
 
   let operator = 0;
   for (let iE = 0; iE < 11; iE++) {
-    span.appendChild(document.createElement('p')).innerText = `Tabuada de: ${iE}`
+    span.appendChild(document.createElement('p')).innerText = `Tabuada de: ${iE}`;
 
     for (let i = 0; i < 10; i++) {
       const p = document.createElement('p');
       const index = i + 1;
-      // console.log(index);
-
 
       function calc(operator, index) {
         return operator * index;
