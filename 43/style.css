@@ -1,0 +1,34 @@
+.content {
+  min-height: 240px;
+  background-color: black;
+}
+
+.content span {
+  background-color: whitesmoke;
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content span p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  min-width: 180px;
+  min-height: 180px;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  vertical-align: middle;
+  /* font-style: italic; */
+  font-size: 128px;
+}
+
+progress {
+  width: 100%;
+  margin-top: 16px;
+}
