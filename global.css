@@ -8,6 +8,7 @@
   --text-color-dark: #f0f0f5;
 
   --light-color: rgba(255, 255, 255, 0.04);
+  --radius-size: 6px;
 }
 
 * {
@@ -35,10 +36,12 @@
   display: flex;
   flex-direction: column;
 
+  min-width: 240px;
+
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
 
-  border-radius: 6px;
+  border-radius: var(--radius-size);
 
   padding: 20px;
 }
@@ -71,7 +74,7 @@
 
 .content input {
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: var(--radius-size);
   border: solid 1px grey;
   padding: 5px;
 }
@@ -88,7 +91,7 @@
   /* font-weight: ; */
 
   border: solid 1px grey;
-  border-radius: 5px;
+  border-radius: var(--radius-size);
 
   cursor: pointer;
 }
@@ -99,4 +102,37 @@
 
 .content span {
   margin-top: 10px;
+}
+
+table {
+  width:100%;
+  border-radius: var(--radius-size);
+}
+
+table, th, td {
+  border: none;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+ background-color: #fff;
+}
+
+table tr:last-child td {
+  border-radius: 0 0 var(--radius-size) var(--radius-size);
+}
+
+table th {
+  background-color: var(--bg-color-dark);
+  border-radius: var(--radius-size) var(--radius-size) 0 0;
+  color: white;
 }
