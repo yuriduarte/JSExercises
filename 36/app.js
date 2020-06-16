@@ -16,12 +16,9 @@ function start() {
   const currentYear = date.getUTCFullYear();
   const currentMonth = date.getUTCMonth();
   const currentDay = date.getDate();
-
   const day = serializedDate(currentDay);
   const month = serializedDate(currentMonth + 1);
-
   const nextMonth = serializedDate(currentMonth + 2);
-
   const formatedDate = `${day}/${month}/${currentYear}`;
 
   span.appendChild(document.createElement('p')).innerText = `Data de hoje: ${formatedDate}`;
